@@ -1,18 +1,39 @@
 {
   "name": "challenge_apiblog",
   "version": "1.0.0",
-  "description": "",
-  "main": "model.js",
+  "description": "Tests for CI for blogging app challenge",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "mocha --exit"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.12.4",
     "morgan": "^1.7.0",
     "uuid": "^2.0.3"
-  }
+  },
+  "keywords": [
+    "node",
+    "hyperdev",
+    "express"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "mocha": "^4.1.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benparman/tests-and-ci-for-blogging-app.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/benparman/tests-and-ci-for-blogging-app/issues"
+  },
+  "homepage": "https://github.com/benparman/tests-and-ci-for-blogging-app#readme"
 }
